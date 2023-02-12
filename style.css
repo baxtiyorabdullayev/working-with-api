@@ -6,86 +6,91 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+body {
+  background-color: #ffffff;
+}
+
+.info-title {
+  text-align: center;
+  margin: 15px;
+}
+
 .container {
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px;
 }
 
-body {
-  background-color: #45caff;
-}
-
-.box {
+.product-card {
+  margin: 20px;
   width: 300px;
-  height: 320px;
-  margin: 40px;
-  background-color: #0065cbc6;
-  border-radius: 10px;
-  padding: 7px;
+  height: 340px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: inset -22px -22px 44px #d9d9d9, inset 22px 22px 44px #ffffff;
 }
 
-.title {
-  color: wheat;
-  text-transform: capitalize;
-  margin: 0;
-  padding-top: 10px;
-  padding-left: 20px;
-  font-size: 27px;
-}
-
-.image {
-  position: relative;
-  left: -60px;
-  top: 25px;
-  width: 150px;
-  height: 200px;
-  padding: 10px;
-  background-color: white;
-  border-radius: 10px;
+.category {
+  margin-bottom: 10px;
+  padding: 5px;
   text-align: center;
-  overflow: hidden;
-  box-shadow: 4px 0px 7px 0px #2d2323d9;
+  color: #282828;
+  font-size: 22px;
+  font-weight: 500;
+  background-color: #d9d9d9;
+  border-radius: 20px 20px 0 0;
 }
 
-.image:hover img {
-  transition: 0.6s;
-  transform: scale(1.5);
-}
-
-.image:hover .rating {
-  display: none;
+.mini-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 img {
-  width: 100px;
+  width: 80px;
+}
+
+.card-info {
+  width: 60%;
+}
+
+.title {
+  margin-bottom: 10px;
+  height: 57px;
+  overflow: hidden;
+  color: #282828;
+
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.rating {
+  font-weight: 500;
 }
 
 .price {
-  margin-top: 35px;
-  color: #e0f318;
-  display: inline-block;
+  padding-top: 5px;
+  font-weight: 600;
+  color: orange;
 }
 
-.fa-cart-plus {
-  margin-left: 180px;
-  font-size: 2.5rem;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.fa-cart-plus:hover {
-  transform: scale(1.2);
-  color: rgba(215, 45, 45, 0.867);
-  transition: 0.4s;
-}
 .description {
-  width: 170px;
-  /* background-color: red; */
-  line-height: 25px;
+  padding: 12px;
+  height: 76px;
+  font-size: 9px;
+  color: #757c7a;
   text-align: justify;
-  position: relative;
-  top: -235px;
-  left: 110px;
+  overflow: hidden;
+}
+
+.button {
+  margin: 15px;
+  padding: 4px;
+  width: 70px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d9d9d9;
+  color: #282828;
 }
